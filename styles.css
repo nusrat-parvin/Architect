@@ -1,3 +1,167 @@
-h1{
-    color: brown;
+*{
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
 }
+
+/* header and banner design start */
+
+.header{
+    background-color: rgba(255, 144, 14, 0.1);;
+}
+.navigation{
+    display: flex;
+    padding: 60px 0px 115px 0px;
+    justify-content: space-evenly;
+
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+    margin-left: 80px;
+}
+
+.banner-section{
+text-align: center;
+margin-bottom: 85px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 20px;
+}
+.banner-description{
+    color: #727272;
+    margin-bottom: 33px;
+}
+.button{
+    margin: 0 auto;
+    width: 180px;
+    height: 64px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    margin-bottom: 50px;
+}
+
+.banner-image{
+    width: 1440px;
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+/* header and banner design end */
+/* ------------------------------------------------------------------------------------ */
+
+/* main part design start */
+
+/* first part of main */
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.image-section{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    width: 500px;
+}
+.image-section img{
+    width: 342px;
+    height: 342px;
+}
+.image-info{
+    width: 530px;
+}
+.image-title{
+    line-height: 30px;
+}
+#span-gray{
+    color: #727272
+    ;
+}
+#span-orange{
+    color: #FF900E;
+}
+.image-description{
+    color: #727272;
+    margin: 24px 0px 32px 0px;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+/* Second part of main */
+.article-features{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.features{
+    width: 586px;
+}
+.small-feature{
+    width: 586px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 6px 50px rgb(159, 42, 42);
+}
+.feature-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    padding: 20px;
+    border-left: 3px solid #FF900E ;
+}
+.feature-heading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.feature-image img{
+    width: 800px;
+    height: 1059px;
+}
+.explore-btn{
+    width: 342px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+/* main part design end */
+/* ------------------------------------------------------------------------------------ */
+
+/* footer design start */
+
+
+
+
+
+
+
+
+
+/* footer design end */
+
+/* ------------------------------------------------------------------------------------- */
+
+/* MEDIA QUERY START FROM HERE */
