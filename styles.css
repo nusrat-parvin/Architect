@@ -6,7 +6,7 @@
 /* header and banner design start */
 
 .header{
-    background-color: rgba(255, 144, 14, 0.1);;
+    background-color: rgba(255, 144, 14, 0.1);
 }
 .navigation{
     display: flex;
@@ -115,7 +115,7 @@ margin-bottom: 85px;
     width: 586px;
     padding: 10px;
     margin: 10px;
-    box-shadow: 0px 6px 50px rgb(159, 42, 42);
+    box-shadow: 0px 6px 50px rgba(0, 0, 10, 0.1);
 }
 .feature-title{
     font-weight: 700;
@@ -132,18 +132,67 @@ margin-bottom: 85px;
 .feature-image img{
     width: 800px;
     height: 1059px;
+    position: relative;
 }
-.explore-btn{
-    width: 342px;
-    height: 200px;
+.expert-btn{
+    width: 340px;
+    height: 180px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 60px;
+    left: 750px;
+    top: 3130px;
+    position:absolute;
+    line-height: 70px;
+}
+.mini-text{
+    font-size: 25px;
+    font-weight: 500;
 }
 
+/* third part of main */
+.third-section{
+    margin: 75px;
+}
+.achivement{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.achive{
+    border: 2px solid #FF900E;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 100px 80px;
+}
+.third-section-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 30px;
+}
 
-
-
-
-
-
+/* sponsorship part */
+.sponsor-article{
+    color: #FF900E;
+}
+.sponsor-title{
+text-align: center;
+}
+.sponsor-text{
+/* color: #FF900E; */
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    mix-blend-mode:darken
+}
 
 
 
@@ -152,7 +201,15 @@ margin-bottom: 85px;
 
 /* footer design start */
 
-
+.footer{
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 1440px;
+height: 50px;
+text-align: center;
+margin-bottom: 100px;
+margin-top: 100px;
+padding-top: 20px;
+}
 
 
 
