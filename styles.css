@@ -21,8 +21,9 @@
 }
 
 .nav-bar ul li{
+    padding-left: 15px;
     list-style-type: none;
-    margin-left: 80px;
+
 }
 
 .banner-section{
@@ -35,9 +36,11 @@ margin-bottom: 85px;
     font-size: 60px;
     line-height: 75px;
     margin-bottom: 20px;
+    margin-left: 5px;
 }
 .banner-description{
     color: #727272;
+    margin-left: 5px;
     margin-bottom: 33px;
 }
 .button{
@@ -50,7 +53,8 @@ margin-bottom: 85px;
     font-size: 20px;
     border-radius: 8px;
     background-color: #FF900E;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-left: 5px;
 }
 
 .banner-image{
@@ -81,11 +85,10 @@ margin-bottom: 85px;
     width: 342px;
     height: 342px;
 }
-.image-info{
-    width: 530px;
-}
 .image-title{
     line-height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 #span-gray{
     color: #727272 ;
@@ -98,11 +101,11 @@ margin-bottom: 85px;
     height: 171px;
     color: #727272;
     text-align: left;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px -20px 0px;
     line-height: 25px;
     font-weight: 400;
     font-size: 16px;
-
+    margin-left: 5px;
 }
 
 /* Second part of main */
@@ -112,11 +115,9 @@ margin-bottom: 85px;
     margin-bottom: 100px;
 }
 .features{
-    width: 600px;
-    height: 90%;
+   margin-bottom: 10px;
 }
 .small-feature{
-    width: 586px;
     padding: 10px;
     margin: 10px;
     box-shadow: 0px 6px 50px rgba(0, 0, 10, 0.1);
@@ -186,19 +187,24 @@ margin-bottom: 85px;
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 10px;
+    margin-left: 5px;
     line-height: 30px;
 }
 
 /* sponsorship part */
+.sponsor-div{
+    text-align: center;
+    margin-left: 5px;
+}
 .sponsor-title{
-    text-align:center;
+    /* text-align:center; */
     font-weight: 700;
     font-size: 45px;
     margin-bottom: 25px;
 }
 #sponsor-text{
     color: #727272;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 50px;
 }
 .logo{
@@ -206,8 +212,9 @@ margin-bottom: 85px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* margin: 50px; */
-    mix-blend-mode:darken;
+}
+.logo img{
+    margin-bottom: 50px;
 }
 /* MEANINGFUL DESIGN SECTION */
 .all-design{
@@ -249,122 +256,104 @@ margin-bottom: 85px;
 /* MEDIA QUERY START FROM HERE */
 /* MOBILE RESPONSIVE */
 @media screen and (max-width:576px) {
-
-    /* header and banner style start */
-    body{
-        margin-left: 10px;
-        width: 100%;
-    }
+    /* nav and banner part start and all okay */
     .navigation{
         flex-direction: column;
     }
-
     .nav-bar ul{
         flex-direction: column;
-        margin-top: 15px;
+        margin-right: 40px;
+        padding-top: 10px;
     }
     .nav-bar ul li{
-        /* box-shadow: 0px 6px 50px rgba(220, 205, 205, 0.597); */
-        margin-bottom: 7px;
-        font-size: 20px;
-        padding: 10px;
-        background-color: rgb(232, 210, 191);
-        text-align: center;
-        color: white;
-        margin: 10px;
-        
+        margin-bottom: 5px;
+        text-align: left;
     }
     .banner-section{
         text-align: left;
     }
-
     .banner-image{
         width: 100%;
         height: 100%;
     }
-    /* header and banner style end */
+    /* nav and banner part end and all okay */
+    /* main first part start all okay */
 
-/* main part start */
+    .main-section{
+        flex-direction: column;
+    }
+    .image-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-description{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px;
+    }
+    /* main first end all okay */
 
-/* first part */
-.main-section{
-    flex-direction: column;    
-}
-.image-section{
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 50px;
-}
-.image-section img{
-    width: 100%;
-    height: 100%;
-}
+    /* main second start all okay */
+    .article-features{
+        flex-direction: column;
+    }
+    .features{
+        width: 100%;
+        height: 100%;
+    }
+    .feature-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .expert-btn{
+        position:static;
+    }
+    .small-feature{
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    /* main second end all okay */
+/* main third part start and all okay */
+    .third-section{
+        margin: 0px;
+    }
+    .achivement{
+        flex-direction: column;
+        justify-content:center;
+    }
+    .achive{
+        width: 240px;
+        height: 170px;
+        margin-bottom: 10px;
+    }
+    /* main third part end and all okay */
 
-/* second part */
-.article-features{
-    width: 100%;
-    height: 100%;
-    flex-direction: column; 
-    /* justify-content: center; 
-    align-items: center;  */
-}
+    /* main Unique section part start and all okay */
+    .all-design{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding-left: 70px;
+    }
+    .third-section-title{
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    /* main Unique section part end and all okay */
 
-.feature-image img{
-    width: 100%;
-    height: 100%;
-}
-.small-feature{
-    width: 87%;
-    box-shadow: 0px 6px 50px rgba(0, 0, 10, 0.1);
-}
-.image-description{
-    
-    line-height: 25px;
-    font-weight: 400;
-    font-size: 16px;
+    .sponsor-div{
+        text-align: left;
+    }
 
-}
-.expert-btn{
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 10px;
-    position: static;
-}
+    .logo{
+        flex-direction:column;
+    }
 
-/* third part */
-.achivement{
-    flex-direction: column;
-}
-.achive{
-    padding-top: 80px;
-    margin-bottom: 10px;
-}
-.third-section-title{
-    margin-left: -50px;
-}
+    /* sponsorship end and all okay */
 
-/* sponsorship */
-.sponsor-title{
-    text-align:left;
-}
-#sponsor-text{
-    text-align: left;
-}
-.logo{
-    flex-direction: column;
-}
-.logo img{
-    margin-bottom: 30px;
-}
+    /* footer start and all okay */
 
-/* main part end */
+    .footer{
+        width: 100%;
+     }
 
-
-/* footer style start */
-
-.footer{
-    width: 100%;
-}
-
-/* footer style end */
-
+    /* footer end and all okay */
 }
